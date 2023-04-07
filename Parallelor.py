@@ -214,16 +214,16 @@ while again != 'n':
         for key in d:
             ID = d[key].index[d[key]['Gloss'].str.contains(consecutive_chars) == True].tolist()
             ID.sort()
-            if key == ms_list[p]:
-                if parallel_list != []:
-                    if ID[0] >= int((parallel_list[n])[1]):
-                        the_gloss = ID[0]
-                    else:
-                        higher_ID = [value for value in ID if value >= int((parallel_list[n])[1])]
-                        higher_ID.sort()
-                        ID = higher_ID
-            else:
-                the_gloss = ID[0]
+            # if key == ms_list[p]:
+            #     if parallel_list != []:
+            #         if ID[0] >= int((parallel_list[n])[1]):
+            #             the_gloss = ID[0]
+            #         else:
+            #             higher_ID = [value for value in ID if value >= int((parallel_list[n])[1])]
+            #             higher_ID.sort()
+            #             ID = higher_ID
+            # else:
+            #     the_gloss = ID[0]
                 
             it = 1
             for i in ID:
